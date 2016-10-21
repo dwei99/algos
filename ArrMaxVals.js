@@ -16,7 +16,7 @@ function largestOfFour(arr){
  var arrnew = [0,0,0,0]; //array to store largest value of the paramater arrays
 
  for (var i=0; i<arr.length; i++){
-   for( var j=0; j<arr[i].length; j++){
+   for( var j=0; j<arr[i].length; j++){ //the for loop for the sub-array utilizes array from i to contorl loop (ie. arr[i] == 4)
 
      if (arrnew[i]< arr[i][j]){
        arrnew[i] = arr[i][j];
